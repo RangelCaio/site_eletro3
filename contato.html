@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fale conosco</title>
+        <link rel="icon" href="fotos/favicon.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div>
+                <h1>Eletrônica store</h1>
+                <h2 class="sticky">Os melhores preços estão aqui!</h2>
+            </div>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="">Cadastro</a>
+                <a href="contato.html">Contato</a>
+                <a href="">Institucional</a>
+                <a href="carrinho.html">Carrinho</a>
+            </nav>
+
+        </header>
+
+        <section>
+            
+            <div class="h2_div_titulo">
+                <h2 class="h2_titulo">Preencha os campos abaixo para contato</h2>
+            </div>
+
+            <form class="formulario">
+                <div>
+                    <label for="texto">Nome completo</label>
+                    <input type="text" id="texto" name="texto" required autocomplete="name" minlength="5" maxlength="40" placeholder="Nome" class="formulario_input1">
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" minlength="5" maxlength="25" placeholder="E-mail" class="formulario_input1">
+                </div>
+                <div>
+                    <label for="number">Telefone</label>
+                    <input type="number" id="number" name="number" required autocomplete="tel" placeholder="Telefone" class="formulario_input1">
+                </div>
+                <div>
+                    <label>Você é de qual região do Brasil?</label>
+                    <input type="text" id="regiao" name="regiao" list="lista" placeholder="Escolha uma opção" class="formulario_input1">
+                    <datalist id="lista">
+                        <option value="Norte">
+                        <option value="Nordeste">
+                        <option value="Centro-oeste">
+                        <option value="Sudeste">
+                        <option value="Sul">
+                    </datalist>
+                </div>
+                <div>
+                    <label for="postal">Caixa Postal</label>
+                    <input type="number" id="postal" name="postal" required autocomplete="postal-code" placeholder="Caixa Postal" class="formulario_input1">
+                </div>
+                <div>
+                    <label>Já é cliente das nossas lojas?</label>
+                    <input type="radio" id="radiosim" name="simnao" value="sim">
+                    <label for="radiosim">Sim</label>
+                    <input type="radio" id="radionao" name="simnao" value="nao">
+                    <label for="radionao">Não</label>
+                </div>
+                <div>
+                    <label for="opcoes">O que você mais procura na loja? </label>
+                    <select name="opcoes" id="opcoes" required class="formulario_input1">
+                        <option value="0" disabled selected>Escolha uma opção</option>
+                        <option value="1">Celulares</option>
+                        <option value="2">Notebooks</option>
+                        <option value="3">Caixas de som</option>
+                        <option value="4">outros</option>
+                        <option value="5">Nenhum</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Já comprou aqui?</label>
+                    <label>
+                        <input type="checkbox" name="cel" value="cel">
+                        Celular
+                    </label>
+                    <label>
+                        <input type="checkbox" name="note" value="note">
+                        Notebook
+                    </label>
+                    <label>
+                        <input type="checkbox" name="nenhum" value="nenhum">
+                        Nenhum
+                    </label>
+                </div>
+                <div>
+                    <label>Digite o assunto</label>
+                    <textarea name="areag" id="areag" placeholder="Digite aqui o que gostaria de comunicar" required class="formulario_input2"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="botao">Enviar</button>
+                    <button type="reset" class="botao">Resetar</button>
+                </div>
+                <div>
+                    <section class="section_contato">
+                        <p>Repondemos segunda a sexta, das 8h às 20h e aos sábados, das 9h às 15h.</p>
+                        <p>Nossos contatos</p>
+                        <p>Whatsapp: 55(00)01010101</p>
+                        <p>E-mail: suporte@eletronico.com</p>
+                        <p>Instagram: @eletronico</p>
+                    </section>
+                </div>
+            </form>
+
+        </section>
+
+        <aside>
+            <picture>
+                <source media="(max-width: 480px)" srcset="fotos/aside2.jpg">
+                <img src="fotos/aside1.jpg" alt="">
+            </picture>
+        </aside>
+
+        <p class="voltar"><a href="index.html">VOLTAR</a></p>
+
+        <footer>
+            <h2>Esse site foi desenvolvido pela Eletrônica Store, a maior do Brasil</h2>
+            
+            <div id="footer">
+        
+            </div>
+        </footer>
+
+    </body>
+</html>
